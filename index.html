@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Lanz Isaac C. Olaes - Portfolio</title>
+  <meta name="description" content="Creative portfolio of Lanz Isaac C. Olaes - BSCS Student, Web Developer">
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Cursor Follower -->
+  <div class="cursor-glow"></div>
+
+  <!-- Scroll Progress Bar -->
+  <div class="scroll-progress-bar"></div>
+
+  <!-- Floating Particles -->
+  <div class="particles-container"></div>
+
+  <!-- Loading -->
+  <div id="loading" aria-hidden="true">
+    <div class="loading-animation">
+      <div class="spinner"></div>
+      <div class="loading-text">
+        <span>D</span><span>r</span><span>e</span><span>a</span><span>m</span><span>i</span><span>n</span><span>g</span><span>.</span><span> </span><span> </span><span> </span><span>D</span><span>e</span><span>s</span><span>i</span><span>g</span><span>n</span><span>i</span><span>n</span><span>g</span><span>.</span><span> </span><span> </span><span> </span><span>D</span><span>o</span><span>i</span><span>n</span><span>g</span><span>.</span><span>.</span><span>.</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Hero -->
+  <header class="hero reveal" id="hero">
+    <div class="hero-content">
+      <div class="hero-left">
+        <div class="greeting-badge">
+          <span class="wave">👋</span> <span id="greeting-text">Welcome</span>
+        </div>
+        <h1 id="name" class="glitch" data-text="Lanz Isaac C. Olaes">Lanz Isaac C. Olaes</h1>
+        <p id="tagline" class="typing">Ideas in progress, results in motion!</p>
+        <div class="hero-meta">
+          <span class="chip pulse-border"><i class="fas fa-briefcase"></i> BSCS Student at MSEUF</span>
+          <span class="chip pulse-border"><i class="fas fa-map-marker-alt"></i> Philippines</span>
+        </div>
+        <div class="hero-cta">
+          <button class="cta-primary" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})" aria-label="Get in touch">
+            <span>Get in Touch</span>
+            <i class="fas fa-arrow-right"></i>
+          </button>
+          <button class="cta-secondary" onclick="document.getElementById('projects').scrollIntoView({behavior:'smooth'})" aria-label="View my work">
+            <span>View Work</span>
+            <i class="fas fa-eye"></i>
+          </button>
+        </div>
+      </div>
+
+      <div class="hero-right">
+        <div class="portrait-wrap" aria-label="Profile photo">
+          <div class="orbit-ring ring-1"></div>
+          <div class="orbit-ring ring-2"></div>
+          <div class="orbit-ring ring-3"></div>
+          <img src="Picture.jpg" alt="Lanz Isaac C. Olaes portrait" id="portrait" loading="eager">
+          <div class="portrait-glow"></div>
+        </div>
+        <div class="floating-icons" aria-hidden="true">
+          <div class="float-icon" style="--delay: 0s; --duration: 3s;">💻</div>
+          <div class="float-icon" style="--delay: 1s; --duration: 4s;">🎨</div>
+          <div class="float-icon" style="--delay: 2s; --duration: 3.5s;">⚡</div>
+          <div class="float-icon" style="--delay: 0.5s; --duration: 4.5s;">🚀</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="blob blob-1" aria-hidden="true"></div>
+    <div class="blob blob-2" aria-hidden="true"></div>
+    <div class="blob blob-3" aria-hidden="true"></div>
+
+    <div class="parallax layer-a" aria-hidden="true"></div>
+    <div class="parallax layer-b" aria-hidden="true"></div>
+  </header>
+
+  <!-- About -->
+  <section id="about" class="reveal" data-order="1">
+    <div class="container">
+      <h2><i class="fas fa-user"></i> About</h2>
+      <p><strong>Hi, I'm Lanz.</strong> BSCS student at Manuel S. Enverga University, coding my way into the future. I love being curious, always excited to explore new things and turn my ideas into reality!</p>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="reveal" data-order="2">
+    <div class="container">
+      <h2><i class="fas fa-code"></i> Skills & Tools</h2>
+      <div class="skills-grid">
+        <div class="skill card-hover" data-level="70">
+          <div class="skill-content">
+            <span>HTML</span>
+            <span class="skill-icon">🌐</span>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-progress" style="--progress: 70%"></div>
+          </div>
+        </div>
+        <div class="skill card-hover" data-level="50">
+          <div class="skill-content">
+            <span>CSS</span>
+            <span class="skill-icon">🎨</span>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-progress" style="--progress: 50%"></div>
+          </div>
+        </div>
+        <div class="skill card-hover" data-level="45">
+          <div class="skill-content">
+            <span>JavaScript</span>
+            <span class="skill-icon">⚡</span>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-progress" style="--progress: 45%"></div>
+          </div>
+        </div>
+        <div class="skill card-hover" data-level="30">
+          <div class="skill-content">
+            <span>Python</span>
+            <span class="skill-icon">🐍</span>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-progress" style="--progress: 30%"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="reveal" data-order="3">
+    <div class="container">
+      <h2><i class="fas fa-folder-open"></i> Projects</h2>
+
+      <div class="carousel">
+        <div class="carousel-inner">
+          <div class="project-card flip">
+            <div class="flip-inner">
+              <div class="flip-front">
+                <img src="Calcu.jpg" alt="Simple Calculator project screenshot" loading="lazy">
+                <h3>Simple Calculator</h3>
+                <div class="project-tags">
+                  <span class="tag">Python</span>
+                  <span class="tag">CLI</span>
+                </div>
+              </div>
+              <div class="flip-back">
+                <p>A beginner-friendly command-line calculator created in Python by Lanz Olaes. This is my first project, and I will continue improving it as I learn more.</p>
+                <a href="https://github.com/LanzOlaes/student-to-engineer/tree/main/1st%20year%20projects/Calculator" target="_blank" rel="noopener noreferrer" class="github-btn">
+                  <i class="fab fa-github"></i>
+                  <span>View on GitHub</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card flip">
+            <div class="flip-inner">
+              <div class="flip-front">
+                <img src="Guess.jpg" alt="Guessing Game project screenshot" loading="lazy">
+                <h3>Guessing Game</h3>
+                <div class="project-tags">
+                  <span class="tag">Python</span>
+                  <span class="tag">Game</span>
+                </div>
+              </div>
+              <div class="flip-back">
+                <p>A simple number guessing game written in Python. The player has to guess the number within limited lives depending on their chosen difficulty.</p>
+                <a href="https://github.com/LanzOlaes/student-to-engineer/tree/main/1st%20year%20projects/Guessing%20Game" target="_blank" rel="noopener noreferrer" class="github-btn">
+                  <i class="fab fa-github"></i>
+                  <span>View on GitHub</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <button class="carousel-btn prev" aria-label="Previous project" onclick="moveCarousel(-1)">‹</button>
+        <button class="carousel-btn next" aria-label="Next project" onclick="moveCarousel(1)">›</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Certifications -->
+  <section id="certifications" class="reveal" data-order="4">
+    <div class="container">
+      <h2><i class="fas fa-certificate"></i> Coursera Certifications</h2>
+      <p class="section-subtitle">Click on any certificate to verify its authenticity on Coursera</p>
+      
+      <div class="certifications-grid">
+        <a href="https://www.coursera.org/account/accomplishments/verify/M3JRDCTGF4OU" target="_blank" rel="noopener noreferrer" class="cert-card card-hover">
+          <div class="cert-badge">
+            <i class="fas fa-graduation-cap"></i>
+          </div>
+          <div class="cert-content">
+            <h3>Programming for Everybody (Getting Started with Python)</h3>
+            <p class="cert-issuer">University of Michigan</p>
+            <p class="cert-date">Completed: September 2025</p>
+          </div>
+          <div class="cert-verify">
+            <span>Verify</span>
+            <i class="fas fa-external-link-alt"></i>
+          </div>
+          <div class="cert-glow"></div>
+        </a>
+
+        <a href="https://www.coursera.org/account/accomplishments/verify/YOUR_CERT_ID" target="_blank" rel="noopener noreferrer" class="cert-card card-hover">
+          <div class="cert-badge">
+            <i class="fas fa-code"></i>
+          </div>
+          <div class="cert-content">
+            <h3>Python Data Structures</h3>
+            <p class="cert-issuer">University of Michigan</p>
+            <p class="cert-date">Completed: November 2025</p>
+          </div>
+          <div class="cert-verify">
+            <span>Verify</span>
+            <i class="fas fa-external-link-alt"></i>
+          </div>
+          <div class="cert-glow"></div>
+        </a>
+
+        <a href="https://www.coursera.org/account/accomplishments/verify/3LCBJVSBIURP" target="_blank" rel="noopener noreferrer" class="cert-card card-hover">
+          <div class="cert-badge">
+            <i class="fas fa-palette"></i>
+          </div>
+          <div class="cert-content">
+            <h3>Build a Webpage with HTML and CSS</h3>
+            <p class="cert-issuer">Board of Infinity</p>
+            <p class="cert-date">Completed: September 2025</p>
+          </div>
+          <div class="cert-verify">
+            <span>Verify</span>
+            <i class="fas fa-external-link-alt"></i>
+          </div>
+          <div class="cert-glow"></div>
+        </a>
+
+        <a href="#" class="cert-card card-hover in-progress" onclick="return false;">
+          <div class="cert-badge">
+            <i class="fab fa-github"></i>
+          </div>
+          <div class="cert-content">
+            <h3>Introduction to Git and GitHub</h3>
+            <p class="cert-issuer">Google</p>
+            <p class="cert-date">In Progress!</p>
+          </div>
+          <div class="cert-verify">
+            <span>Coming Soon</span>
+            <i class="fas fa-hourglass-half"></i>
+          </div>
+          <div class="cert-glow"></div>
+        </a>
+
+        <a href="https://www.coursera.org/account/accomplishments/verify/82GBF77T6QXC" target="_blank" rel="noopener noreferrer" class="cert-card card-hover">
+          <div class="cert-badge">
+            <i class="fas fa-brain"></i>
+          </div>
+          <div class="cert-content">
+            <h3>AI Ethics, Responsible Use, and Creativity</h3>
+            <p class="cert-issuer">University of Michigan</p>
+            <p class="cert-date">Completed: September 2025</p>
+          </div>
+          <div class="cert-verify">
+            <span>Verify</span>
+            <i class="fas fa-external-link-alt"></i>
+          </div>
+          <div class="cert-glow"></div>
+        </a>
+
+        <a href="https://www.coursera.org/account/accomplishments/verify/A4HSTQNC4XJG" target="_blank" rel="noopener noreferrer" class="cert-card card-hover">
+          <div class="cert-badge">
+            <i class="fas fa-lightbulb"></i>
+          </div>
+          <div class="cert-content">
+            <h3>Introduction to Creative AI</h3>
+            <p class="cert-issuer">University of the Arts London</p>
+            <p class="cert-date">Completed: September 2025</p>
+          </div>
+          <div class="cert-verify">
+            <span>Verify</span>
+            <i class="fas fa-external-link-alt"></i>
+          </div>
+          <div class="cert-glow"></div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Fun Facts -->
+  <section id="fun-facts" class="reveal" data-order="5">
+    <div class="container">
+      <h2><i class="fas fa-star"></i> Facts About Me!</h2>
+      <div class="fun-fact-card">
+        <div class="fact-icon">💡</div>
+        <p id="fun-fact">Loading fun fact...</p>
+        <div class="fact-progress"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="reveal" data-order="6">
+    <div class="container">
+      <h2><i class="fas fa-envelope"></i> Let's Connect!</h2>
+      <div class="contact-grid">
+        <a href="mailto:lanzolaes5566@gmail.com" class="contact-card card-hover">
+          <div class="contact-icon">
+            <i class="fas fa-envelope"></i>
+          </div>
+          <div class="contact-info">
+            <h3>Email</h3>
+            <p>lanzolaes5566@gmail.com</p>
+          </div>
+          <i class="fas fa-arrow-right contact-arrow"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/lanz-olaes-2077392b3/" target="_blank" rel="noopener noreferrer" class="contact-card card-hover">
+          <div class="contact-icon">
+            <i class="fab fa-linkedin"></i>
+          </div>
+          <div class="contact-info">
+            <h3>LinkedIn</h3>
+            <p>Connect with me</p>
+          </div>
+          <i class="fas fa-arrow-right contact-arrow"></i>
+        </a>
+        <a href="https://github.com/LanzOlaes" target="_blank" rel="noopener noreferrer" class="contact-card card-hover">
+          <div class="contact-icon">
+            <i class="fab fa-github"></i>
+          </div>
+          <div class="contact-info">
+            <h3>GitHub</h3>
+            <p>View my projects</p>
+          </div>
+          <i class="fas fa-arrow-right contact-arrow"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-content">
+      <p>&copy; <span id="year"></span> LANZ OLAES</p>
+      <button class="easter" onclick="triggerEasterEgg()" aria-label="Surprise animation">
+        <span>Surprise</span>
+        <span class="sparkle">✨</span>
+      </button>
+      <button class="scroll-top" onclick="window.scrollTo({top:0,behavior:'smooth'})" title="Back to top" aria-label="Scroll to top">
+        <i class="fas fa-arrow-up"></i>
+      </button>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
